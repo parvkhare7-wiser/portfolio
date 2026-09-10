@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parv Khare — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Source+Sans+3:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a href="#top" class="mark">P. Khare</a>
+    <nav class="site-nav" id="site-nav">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero wrap">
+    <p class="hero-tag">B.Tech, Computer Science — UPES</p>
+    <h1 class="hero-title">Parv Khare builds things that sit at the edge of code, circuits, and paper.</h1>
+    <p class="hero-sub">Networking labs, AI/ML coursework, embedded logic, and the occasional print design for a family bookshop that's been open since 1980. I like problems small enough to finish and interesting enough to keep.</p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-primary">See the work</a>
+      <a href="#contact" class="btn btn-ghost">Get in touch</a>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="wrap about-grid">
+      <div class="about-portrait">
+        <svg viewBox="0 0 240 240" class="avatar" role="img" aria-label="Portrait placeholder">
+          <rect width="240" height="240" fill="#1F4B3F"/>
+          <circle cx="120" cy="98" r="42" fill="#EAE3D4"/>
+          <path d="M40 220 C40 160 80 140 120 140 C160 140 200 160 200 220 Z" fill="#EAE3D4"/>
+        </svg>
+        <p class="portrait-caption">Replace this with your own photo — see documentation.</p>
+      </div>
+      <div class="about-copy">
+        <h2 class="section-title">About</h2>
+        <p>I'm a passionate software engineer interested in solving real-life problems. I'm a Computer Science undergraduate at UPES, working across networking, digital electronics, and applied mathematics alongside core programming coursework. I spent time this year interning with the Shivdevi Foundation, and separately designing print and interactive material for my family's bookshop — two projects that taught me very different lessons about building for real people.</p>
+        <p>I'm most comfortable when a task has a concrete artifact at the end of it: a report, a working script, a card someone can hold. That's the thread running through the projects below.</p>
+        <h3 class="skills-heading">Currently working with</h3>
+        <ul class="skills-list">
+          <li>Python</li>
+          <li>Data Structures &amp; Algorithms</li>
+          <li>Digital Electronics</li>
+          <li>Computer Networks</li>
+          <li>AI / ML fundamentals</li>
+          <li>HTML / CSS / JS</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
+    <div class="wrap">
+      <h2 class="section-title">Projects</h2>
+      <div class="card-grid">
+
+        <article class="card">
+          <div class="card-tag">networking</div>
+          <h3>Data Communication &amp; Networks Lab Report</h3>
+          <p>A documentation exercise covering seven core networking devices — hubs, switches, routers, and more — with original device photographs, schematic diagrams, and function notes compiled into a single report.</p>
+          <p class="card-tech">Tech: Research &amp; technical writing, diagram design, PDF layout</p>
+          <a href="#" class="card-link">View report →</a>
+        </article>
+
+        <article class="card">
+          <div class="card-tag">design</div>
+          <h3>Dayal Book Depot — Digital &amp; Print Identity</h3>
+          <p>An interactive HTML flip-card business card and a matching print-ready PDF for my family's bookshop in Lucknow, established 1980 — built around a deep green and gold palette and a crown mark.</p>
+          <p class="card-tech">Tech: HTML, CSS, print design</p>
+          <a href="#" class="card-link">View project →</a>
+        </article>
+
+        <article class="card">
+          <div class="card-tag">fieldwork</div>
+          <h3>Shivdevi Foundation — Internship Report</h3>
+          <p>A written record of a month-long NGO internship covering a plantation drive, a community food-packet distribution, and a school hygiene-kit outreach visit, with reflections on impact and focus areas.</p>
+          <p class="card-tech">Tech: Documentation, reporting, reflective writing</p>
+          <a href="#" class="card-link">View report →</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap contact-grid">
+      <div>
+        <h2 class="section-title">Contact</h2>
+        <p>Have a project, an internship, or just want to talk networking and old bookshops — reach out.</p>
+        <ul class="contact-list">
+          <li><a href="mailto:parvkhare7@gmail.com">parvkhare7@gmail.com</a></li>
+          <li><a href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+      <form class="contact-form" id="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <button type="submit" class="btn btn-primary">Send message</button>
+        <p class="form-note" id="form-note" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <p>&copy; 2026 Parv Khare. Built with HTML, CSS, and JavaScript.</p>
+    <a href="documentation.md" download class="download-btn">Download Documentation</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
